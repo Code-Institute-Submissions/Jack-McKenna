@@ -1,0 +1,19 @@
+{
+  "name": "jackmckenna",
+  "version": "1.0.0",
+  "description": "Web App for JackMckenna",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcurtis1/jackmckenna.git"
+  },
+  "author": "Henry Curtis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcurtis1/jackmckenna/issues"
+  },
+  "homepage": "https://github.com/hcurtis1/jackmckenna#readme"
+}
