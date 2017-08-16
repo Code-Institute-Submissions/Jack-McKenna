@@ -32,14 +32,15 @@
     max-width: 100px; }
 
 /* Styling for Nav bars on engineer and electrician screens*/
-#subNavBrand {
-  font-size: 10px; }
-
-.navbar-inner {
-  background-color: transparent; }
-
-.navbar a {
-  color: #f3f3f3; }
+.navbar {
+  background-color: #333333;
+  padding-bottom: 10px; }
+  .navbar a {
+    color: #f3f3f3; }
+  .navbar .navbar-inner {
+    background-color: transparent; }
+    .navbar .navbar-inner .navbar-header #subNavBrand {
+      font-size: 10px; }
 
 /* Styling for electrician page */
 #electrician {
@@ -78,7 +79,7 @@
 
 /* Styling for Electrician page division */
 .fixedGall {
-  height: 70vh;
+  height: 50vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -123,25 +124,6 @@
     font-size: 30px; }
 
 /* CSS styling for carousel in aboutme sections */
-.carousel-fade .carousel-inner .item {
-  transition-property: opacity; }
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0; }
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1; }
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  transform: translate3d(0, 0, 0); }
-.carousel-fade .carousel-control {
-  z-index: 2; }
-
 /* Styling for electrician portfolio page */
 #portfolio {
   background-color: #333333;
@@ -151,27 +133,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 50px; }
   #portfolio h1 {
     color: #f3f3f3;
     font-family: Open Sans Condensed, Helvetica, sans-serif;
-    font-size: 30px; }
-
-#portfolio h1 {
-  color: #f3f3f3;
-  font-family: Open Sans Condensed, Helvetica, sans-serif;
-  font-size: 30px; }
+    font-size: 30px;
+    margin-top: 20px; }
+  #portfolio .row {
+    padding: 0 5vw; }
 
 .portWork {
   box-sizing: border-box;
   vertical-align: top;
   border: 1px grey solid;
   border-radius: 10px;
-  margin: 10px 30px;
-  white-space: normal; }
+  margin: 30px;
+  white-space: normal;
+  min-width: 400px; }
   .portWork img {
     max-width: 100%;
-    max-height: 100%; }
+    max-height: 100%;
+    margin-bottom: auto; }
+
+/* Styling for Modals */
+.modal .modal-header h4 {
+  width: 100%;
+  text-align: center; }
+.modal .modal-body .modalPic {
+  margin: 10px auto; }
+  .modal .modal-body .modalPic img {
+    max-height: 200px; }
 
 /* Styling for wire dog division */
 #wireDog {
@@ -179,8 +171,8 @@
 
 /* Styling for electrician contact me page */
 #contactMe {
-  background-color: #fefefe;
-  height: 100vh;
+  background-color: #333333;
+  min-height: 80vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -190,9 +182,10 @@
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; }
+  text-align: center;
+  color: #f3f3f3; }
   #contactHead h1 {
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -207,4 +200,78 @@
     font-size: 20px;
     max-width: 60vw; }
 
+/* Styling for contact me submission form */
+#contact-Form label {
+  color: #f3f3f3; }
+
 /* Styling for the footer */
+.footer {
+  background: #F5F5F5;
+  height: auto;
+  position: relative;
+  width: 100%;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey; }
+  .footer h2 {
+    text-transform: uppercase;
+    color: #5F9EA0;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: solid #A9A9A9 1px;
+    padding-bottom: 10px; }
+  .footer ul {
+    font-family: Open sans;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    color: #A9A9A9; }
+
+#siteMap ul li a {
+  color: #A9A9A9; }
+
+.newsletter-box {
+  overflow: hidden; }
+  .newsletter-box .btn {
+    border: medium none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    color: #fff; }
+
+.social {
+  width: 100%; }
+  .social li {
+    width: 23%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 2px;
+    padding: 0;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s; }
+  .social li:hover {
+    transform: scale(1.15) rotate(360deg);
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg); }
+
+.footer-bottom {
+  text-align: center; }
+  .footer-bottom h1 {
+    color: white; }
