@@ -6,76 +6,46 @@ $font-color: #f3f3f3;
 
 /* CSS styling for angular scope */
 .ng-scope {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
+	background-color: $stock-back;
 }
 
-/* CSS styling for homepage */
-#HomeBck {
-	background-image: url("/images/Backgrounds/homeportal.jpg");
-	height: 100%;
-	width: 100%;
-}
-
-#HomeHead {
-	margin-left: auto;
-	margin-right: auto;
-	width: 30%;
-	h1 {
-		margin-top: 12vh;
-		font-family: $font-stack;
-		text-align: center;
-		font-size: 50px;
+@media (max-width: 500px) {
+	.ng-scope {
+		height: auto;
 	}
 }
 
-.HomePortal {
-	margin-top: 15%;
-	text-align: center;
-	font-family: $font-stack;
-	font-size: 20px;
-	h3 {
-		font-size: 30px;
-		font-weight: bold;
-	}
-	img {
-		max-width: 100px
-	}
-}
-
-/* Styling for Nav bars on engineer and electrician screens*/
+/* Styling for Nav bars*/
 
 .navbar {
 	background-color: $stock-back;
-	padding-bottom: 10px;
+	padding: 0 40px;
+	display: inline-block;
+	.container-fluid {
+		padding-top:5px;
+	}
 	a {
 		color: $font-color;
+		font-family: $font-stack;
+		font-size: 25px;
 	}
-	.navbar-inner {
-		background-color: transparent;
-		.navbar-header{
-			#subNavBrand{
-				font-size: 10px;
-			}
-		}
+	.navbar-brand{
+			font-size: 30px;
+			font-family: $font-stack;
 	}
-}	
-
-/* Styling for electrician page */
-
-#electrician {
-	position: relative;
+	span {
+		background-color: $font-color;
+	}
 }
 
-/* Styling for Electrician Page Top */
+/* Styling for Home Page */
 #elecTop {
-	background-color: $stock-back;
-	height: 100vh;
-	width: 100vw;
+	margin-top: 20px;
 	position: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
@@ -84,8 +54,32 @@ $font-color: #f3f3f3;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	h2 {
+		font-size: 80px;
+	}
 	p {
 		color: $font-color;
+		font-family: $font-stack;
+		font-size: 40px;
+		margin-top: 20px;
+	}
+	#home-brief{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 500px) {
+	#elecTitle {
+		margin-top: 10px;
+		h2 {
+			font-size: 40px
+		}
+		p {
+			font-size: 25px;
+		}
+		#home-brief {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -98,48 +92,9 @@ $font-color: #f3f3f3;
 	}
 }
 
-.glyphicon {
-	color: grey;
-	margin-top: 20px;
-	font-size: 50px;
-}
-
-/* Styling for Electrician page division */
-.fixedGall {
-	height: 50vh;
-	background-size: contain;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    align-items: center;
-    position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-#qualElec {
-	h2 {
-		font-size: 40px;
-		font-weight: bolder;
-		font-family: $font-stack;
-		margin-top: 80px;
-		margin-bottom: 20px;
-	    padding: 20px;
-	}
-	a {
-		margin-top: auto;
-		margin-left: auto;
-		z-index: -1;
-	}
-}
-
 /* Styling for About me section of ELectrician Page */
 
 #aboutMe {
-	background-color: $stock-back;
-	width: 100vw;
 	padding-bottom: 20px;
 	position: center;
 	display: flex;
@@ -155,8 +110,15 @@ $font-color: #f3f3f3;
 	padding: 5vh 15vw;
 	h3 {
 		margin-bottom: 5vh;
-		font-size: 30px;
+		font-size: 80px;
 	}
+	p {
+		font-size: 20px;
+	}
+}
+
+#elecCarousel {
+	height: 200px;
 }
 
 /* CSS styling for carousel in aboutme sections */
@@ -175,6 +137,7 @@ $font-color: #f3f3f3;
 	align-items: center;
 	text-align: center;
 	padding-bottom: 50px;
+	margin-top: 50px;
 	h1 {
 		color: $font-color;
 		font-family: $font-stack;
@@ -193,7 +156,7 @@ $font-color: #f3f3f3;
 	border-radius: 10px;
 	margin: 30px;
 	white-space: normal;
-	min-width: 400px;
+	max-width: 400px;
 	img {
 		max-width: 100%;
 		max-height: 100%;
@@ -218,12 +181,6 @@ $font-color: #f3f3f3;
 			}
 		}
 	}
-}
-
-/* Styling for wire dog division */
-
-#wireDog {
-	background-size: cover;
 }
 
 /* Styling for electrician contact me page */
@@ -265,10 +222,24 @@ $font-color: #f3f3f3;
 /* Styling for contact me submission form */
 
 #contact-Form {
+	width: 50vw;
 	label {
 		color:$font-color;
 	}
+	#comment {
+		height: 35vh;
+	}
 }
+
+#submit-button {
+	align-items: center;
+	input {
+		color: $stock-back;
+		border-radius: 8px;
+		background-color: white;
+		width: -webkit-fill-available;
+	}
+}	
 
 /* Styling for the footer */
 .footer {
@@ -279,6 +250,7 @@ $font-color: #f3f3f3;
 	border-top: 2px solid grey;
 	border-bottom: 2px solid grey;
 	h2 {
+		text-align: center;
 		text-transform: uppercase;
 		color: #5F9EA0;
 		font-size: 20px;
@@ -287,11 +259,18 @@ $font-color: #f3f3f3;
 		padding-bottom: 10px;
 	}
 	ul {
-		font-family: Open sans;
+		font-family: $font-stack;
+		font-size: 18px;
 		list-style-type: none;
 		margin-left: 0px;
 		padding-left: 0px;
 		color: #A9A9A9
+	}
+	@media (max-width: 991px) {
+		ul {
+			text-align: center;
+			font-size: 25px;
+		}
 	}
 }
 
@@ -302,17 +281,22 @@ $font-color: #f3f3f3;
 .newsletter-box {
 	overflow: hidden;
 	.btn {
-		border: medium none;
+		border: 2px black solid;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		-o-border-radius: 3px;
 		-ms-border-radius: 3px;
-		border-radius: 3px;
+		border-radius: 8px;
 		display: inline-block;
-		height: 40px;
 		padding: 0;
 		width: 100%;
-		color: #fff;
+		font-family: $font-stack;
+		font-size: 20px;
+		color: $stock-back;
+		p {
+			margin-top: auto;
+			margin-bottom: auto;
+		}
 	}
 }
 
@@ -348,7 +332,8 @@ $font-color: #f3f3f3;
 
 .footer-bottom {
 	text-align: center;
-	h1{
-		color: white;
+	h4 {
+		margin-bottom: 0;
+		padding-bottom: 10px; 
 	}
 }
