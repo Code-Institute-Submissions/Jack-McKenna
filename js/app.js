@@ -7,12 +7,16 @@ angular.module('JackApp').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/electrician', {
-        templateUrl: 'templates/electrician.html',
-        controller: 'ElectricianController'
+    .when('/about', {
+        templateUrl: 'templates/about.html',
+        controller: 'AboutController'
     })
-    .when('/engineer', {
-        templateUrl: 'templates/engineer.html',
-        controller: 'EngineerController'
+    .when('/portfolio', {
+        templateUrl: 'templates/portfolio.html',
+        controller: 'PortfolioController'
+    })
+    .when('/contact', {
+        templateUrl: 'templates/contact.html',
+        controller: 'ContactController'
     });
 });
