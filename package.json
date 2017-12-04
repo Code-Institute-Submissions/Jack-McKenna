@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/hcurtis1/jackmckenna/issues"
   },
-  "homepage": "https://github.com/hcurtis1/jackmckenna#readme"
+  "homepage": "https://github.com/hcurtis1/jackmckenna#readme",
+  "dependencies": {
+    "angularfire2": "^5.0.0-rc.4",
+    "firebase": "^4.7.0"
+  }
 }
