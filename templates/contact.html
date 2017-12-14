@@ -2,26 +2,40 @@
 <div class ="container" id="contactMe">
     <div id="contactHead">
         <h1>Looking for Help?<br>Get in Touch!</h1>
-        <p>Fill in the form below with your name, email and a message of what you'd like done and I will get back 
-        to you as soon as possilbe</p>
+        <p>Fill in the form below with your name, email and a message of what you'd 
+            like done and I will get back to you as soon as possilbe</p>
     </div>
-    <fieldset>
-        <form name= "contactForm" id="contact-Form" novalidate action="mailto:hcuk106@gmail.com">
-            <div class="form-group">
-                <label for="fname" class="field">Full Name:</label>
-                <input type="text" name="name" class="form-control" data-ng-model="user.fullname" id="usr">
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email">
-            </div>
-            <div class="form-group">
-                <label>Your Message</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-            </div>
-            <div class="form-group" id="submit-button">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-    </fieldset>
+    <div class="row" id="map-form">
+        <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+            <h3>Based in the Aylesbury area, I can visit anywhere in the near vicinity</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d110830.11638710921!2d-0.9280508968263491!3d51.81063052300917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1513180420198" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
+        <fieldset class="col-md-5 col-sm-12 col-xs-12">
+            <form id="contact-Form">
+                <div class="form-group">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="name" class="form-control" 
+                    ata-ng-model="user.fullname" id="usr" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="form-control" id="email"
+                    placeholder="Email">
+                </div>
+                <div>
+                    <label for="location">Location:</label>
+                    <input type="text" name="location" class="form-control"
+                    id="loc" placeholder="Please enter area of where you live">
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea name="message" class="form-control" rows="5" 
+                    id="comment" placeholder="Your Message"></textarea>
+                </div>
+                <div id="submit-button">
+                    <button class="btn btn-default" type="submit" id="email-submit-button"
+                    value="send">Send</button>>
+                </div>
+            </form>
+        </fieldset>
+    </div>
 </div>

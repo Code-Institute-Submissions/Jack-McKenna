@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/hcurtis1/jackmckenna#readme",
   "dependencies": {
+    "alertify.js": "^1.0.12",
     "angularfire2": "^5.0.0-rc.4",
     "firebase": "^4.7.0"
-  }
+  },
+  "keywords": [
+    "jack"
+  ]
 }

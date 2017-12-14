@@ -81,39 +81,45 @@
   font-size: 30px;
 }
 
+/* line 68, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#elecTitle #home-brief a {
+  text-decoration: underline;
+  color: #f3f3f3;
+}
+
 @media (max-width: 500px) {
-  /* line 72, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  /* line 76, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
   #elecTitle {
     margin-top: 10px;
   }
-  /* line 74, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  /* line 78, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
   #elecTitle h2 {
     font-size: 40px;
   }
-  /* line 77, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  /* line 81, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
   #elecTitle p {
     font-size: 25px;
   }
-  /* line 80, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  /* line 84, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
   #elecTitle #home-brief {
     font-size: 20px;
   }
 }
 
-/* line 86, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 90, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #elecHead {
   font-family: Open Sans Condensed, Helvetica, sans-serif;
   color: #f3f3f3;
   margin-bottom: 20px;
 }
 
-/* line 90, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 94, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #elecHead .fix-head {
   position: fixed;
 }
 
 /* Styling for About me section of ELectrician Page */
-/* line 97, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 101, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #aboutMe {
   padding-bottom: 20px;
   position: center;
@@ -124,35 +130,74 @@
   text-align: center;
 }
 
-/* line 107, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
-#aboutContent {
+/* line 109, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#aboutMe h3 {
+  margin-top: 55px;
   color: #f3f3f3;
   font-family: Open Sans Condensed, Helvetica, sans-serif;
-  padding: 5vh 15vw;
-}
-
-/* line 111, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
-#aboutContent h3 {
   margin-bottom: 5vh;
   font-size: 80px;
 }
 
-/* line 115, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 118, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#aboutContent {
+  color: #f3f3f3;
+  font-family: Open Sans Condensed, Helvetica, sans-serif;
+  width: 100vw;
+  padding: 5vh 15vw;
+}
+
+/* line 123, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #aboutContent p {
   font-size: 20px;
 }
 
-/* line 120, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
-#elecCarousel {
-  height: 200px;
+/* line 126, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#aboutContent img {
+  max-width: -webkit-fill-available;
+  border-radius: 5px;
 }
 
 /* CSS styling for carousel in aboutme sections */
-/* Styling for electrician portfolio page */
-/* line 130, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
-#portfolio {
-  background-color: #333333;
+/* line 134, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#carousel {
+  color: #f3f3f3;
+  font-family: Open Sans Condensed, Helvetica, sans-serif;
   width: 100vw;
+  padding: 5vh 15vw;
+}
+
+/* line 139, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#carousel p {
+  font-size: 20px;
+}
+
+/* line 142, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#carousel img {
+  max-width: -webkit-fill-available;
+  border-radius: 5px;
+}
+
+/* line 146, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#carousel #slider {
+  height: 300px;
+}
+
+/* line 149, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#carousel #sliders {
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+  /* line 152, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  #carousel div {
+    display: none;
+  }
+}
+
+/* Styling for electrician portfolio page */
+/* line 161, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#portfolio {
   position: center;
   display: flex;
   flex-direction: column;
@@ -163,56 +208,105 @@
   margin-top: 50px;
 }
 
-/* line 141, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 170, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #portfolio h1 {
   color: #f3f3f3;
   font-family: Open Sans Condensed, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   margin-top: 20px;
 }
 
-/* line 147, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 176, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#portfolio h3 {
+  color: #f3f3f3;
+  font-family: Open Sans Condensed, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+@media (max-width: 500px) {
+  /* line 182, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  #portfolio h1 {
+    font-size: 40px;
+  }
+  /* line 185, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  #portfolio h3 {
+    font-size: 20px;
+  }
+}
+
+/* line 189, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #portfolio .row {
   padding: 0 5vw;
 }
 
-/* line 152, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 194, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .portWork {
   box-sizing: border-box;
   vertical-align: top;
-  border: 1px grey solid;
+  border: none;
   border-radius: 10px;
   margin: 30px;
   white-space: normal;
   max-width: 400px;
+  background-color: #333333;
 }
 
-/* line 160, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 203, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+.portWork h3 {
+  color: #f3f3f3;
+  font-family: Open Sans Condensed, Helvetica, sans-serif;
+}
+
+/* line 207, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .portWork img {
   max-width: 100%;
   max-height: 100%;
   margin-bottom: auto;
+  border-radius: 10px;
 }
 
 /* Styling for Modals */
-/* line 171, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 217, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 233, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .modal .modal-header h4 {
   width: 100%;
   text-align: center;
 }
 
-/* line 177, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 239, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .modal .modal-body .modalPic {
   margin: 10px auto;
 }
 
-/* line 179, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 241, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .modal .modal-body .modalPic img {
   max-height: 200px;
 }
 
+/* line 252, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+.modal .btnClose:hover,
+.modal .btnClose:focus {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
 /* Styling for electrician contact me page */
-/* line 188, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 262, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #contactMe {
   background-color: #333333;
   min-height: 80vh;
@@ -222,7 +316,7 @@
   align-items: center;
 }
 
-/* line 197, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 271, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #contactHead {
   margin-top: 40px;
   margin-left: auto;
@@ -231,7 +325,7 @@
   color: #f3f3f3;
 }
 
-/* line 203, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 277, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #contactHead h1 {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -242,7 +336,7 @@
   font-size: 50px;
 }
 
-/* line 212, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 286, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #contactHead p {
   margin-left: auto;
   margin-right: auto;
@@ -253,28 +347,47 @@
 }
 
 /* Styling for contact me submission form */
-/* line 224, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
-#contact-Form {
-  width: 50vw;
+/* line 298, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#map-form {
+  width: 100vw;
 }
 
-/* line 226, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 300, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#map-form .col-md-offset-1 {
+  color: Open Sans Condensed, Helvetica, sans-serif;
+  text-align: -webkit-center;
+}
+
+/* line 303, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#map-form .col-md-offset-1 h3 {
+  font-family: Open Sans Condensed, Helvetica, sans-serif;
+  color: #f3f3f3;
+}
+
+@media (max-width: 420px) {
+  /* line 309, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  #map-form iframe {
+    display: none;
+  }
+}
+
+/* line 316, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #contact-Form label {
   color: #f3f3f3;
 }
 
-/* line 229, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 319, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #contact-Form #comment {
   height: 35vh;
 }
 
-/* line 234, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 324, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 #submit-button {
   align-items: center;
 }
 
-/* line 236, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
-#submit-button input {
+/* line 326, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#submit-button button {
   color: #333333;
   border-radius: 8px;
   background-color: white;
@@ -282,7 +395,7 @@
 }
 
 /* Styling for the footer */
-/* line 245, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 335, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .footer {
   background: #F5F5F5;
   height: auto;
@@ -292,7 +405,7 @@
   border-bottom: 2px solid grey;
 }
 
-/* line 252, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 342, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .footer h2 {
   text-align: center;
   text-transform: uppercase;
@@ -303,7 +416,7 @@
   padding-bottom: 10px;
 }
 
-/* line 261, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 351, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .footer ul {
   font-family: Open Sans Condensed, Helvetica, sans-serif;
   font-size: 18px;
@@ -314,24 +427,35 @@
 }
 
 @media (max-width: 991px) {
-  /* line 270, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+  /* line 360, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
   .footer ul {
     text-align: center;
     font-size: 25px;
   }
 }
 
-/* line 277, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
-#siteMap ul li a {
-  color: #A9A9A9;
+/* line 367, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+.glyphicon-earphone {
+  margin-bottom: 10px;
 }
 
-/* line 281, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 371, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+#siteMap ul li a {
+  color: #A9A9A9;
+  font-size: 25px;
+}
+
+/* line 376, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .newsletter-box {
   overflow: hidden;
 }
 
-/* line 283, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 378, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+.newsletter-box #phone-no {
+  font-size: 25px;
+}
+
+/* line 381, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .newsletter-box .btn {
   border: 2px black solid;
   -webkit-border-radius: 3px;
@@ -347,18 +471,18 @@
   color: #333333;
 }
 
-/* line 296, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 394, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .newsletter-box .btn p {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-/* line 303, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 401, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .social {
   width: 100%;
 }
 
-/* line 305, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 403, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .social li {
   width: 23%;
   -webkit-border-radius: 50%;
@@ -379,7 +503,7 @@
   -o-transition: all 0.5s ease 0s;
 }
 
-/* line 324, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 422, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .social li:hover {
   transform: scale(1.15) rotate(360deg);
   -webkit-transform: scale(1.1) rotate(360deg);
@@ -388,12 +512,12 @@
   -o-transform: scale(1.1) rotate(360deg);
 }
 
-/* line 333, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 431, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .footer-bottom {
   text-align: center;
 }
 
-/* line 335, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
+/* line 433, /Users/Henry/Documents/Coding/Projects/JackMckenna/css/sass/desktop.scss */
 .footer-bottom h4 {
   margin-bottom: 0;
   padding-bottom: 10px;
