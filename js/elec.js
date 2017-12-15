@@ -1,32 +1,6 @@
 // zoom to adapt to tablets
 document.body.style.zoom="100%"
 
-// image carousel
-var images =[
-    "images/Carousel-Images/electrician-1.jpg",
-    "images/Carousel-Images/electrician-2.jpg",
-    "images/Carousel-Images/electrician-3.jpg"
-]
-var num = 0
-
-function next() {
-    var slider = document.getElementById("slider");
-    num++;
-    if(num >= images.length) {
-        num = 0
-    }
-    slider.src = images[num];
-}
-
-function prev() {
-    var slider = document.getElementById("slider");
-    num--;
-    if(num < 0) {
-        num = images.length-1
-    }
-    slider.src = images[num];
-}
-
 // modals
 
 //modal variables

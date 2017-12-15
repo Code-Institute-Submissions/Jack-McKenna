@@ -3,15 +3,15 @@
 	<h1>PORTFOLIO</h1>
 	<h3>CLick the pictures below for more information</h3>
 	<div class="row">
-		<button  id="designBtn" class="btn btn-large portWork">
+		<button class="btn portWork" ng-click="design_modal()">
 			<a><img src="/images/light-fitting.jpg"></a>
 			<h3>Design</h3>
 		</button>
-		<button class="btn portWork" data-toggle="modal" data-target="#modalInstallation">
+		<button class="btn portWork" ng-click="installation_modal()">
 			<a><img src="/images/electrical-fitting.jpg"></a>
 			<h3>Installation</h3>
 		</button>
-		<button class="btn portWork" data-toggle="modal" data-target="#modalWiring">
+		<button class="btn portWork" ng-click="repair_modal()">
 			<a><img src="/images/Electrical-wiring.jpg"></a>
 			<h3>Repair</h3>
 		</button>
@@ -22,18 +22,46 @@
 		<!-- Modal Content -->
 		<div class="modal-content">
 			<div class="modal-header">
-				<span class="spanClose">&times;</span>
 				<h4 class="modal-title">Design</h4>
 			</div>
 			<div class="modal-body">
+				<!-- Wording provided by: -->
 				<p>Sunt cupidatat eu elit magna sunt. Exercitation laboris Lorem in exercitation consequat tempor eiusmod aute. Cupidatat adipisicing in ipsum sit.</p>
-				<a class="modalPic" id="lightingPic"><img src="images/modal-images/Lightbulb.png"></a>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default btnClose">Close</button>
+				<button type="button" class="btn btn-default" ng-click="close_modal()">Close</button>
 			</div>
 		</div>
 	</div>
 <!-- Modal for Installation -->
-
+	<div id="installationModal" class="modal" role="dialog">
+		<!-- Modal Content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Installations</h4>
+			</div>
+			<div class="modal-body">
+				<!-- Wording provided by: -->
+				<p>Sunt cupidatat eu elit magna sunt. Exercitation laboris Lorem in exercitation consequat tempor eiusmod aute. Cupidatat adipisicing in ipsum sit.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" ng-click="close_modal()">Close</button>
+			</div>
+		</div>
+	</div>
 <!-- Modal for Repair -->
+	<div id="repairModal" class="modal" role="dialog">
+		<!-- Modal Content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Repair</h4>
+			</div>
+			<div class="modal-body">
+				<!-- -->
+				<p>Sunt cupidatat eu elit magna sunt. Exercitation laboris Lorem in exercitation consequat tempor eiusmod aute. Cupidatat adipisicing in ipsum sit.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" ng-click="close_modal()">Close</button>
+			</div>
+		</div>
+	</div>
