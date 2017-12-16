@@ -8,32 +8,27 @@ This is a web app to showcase Jack Mckenna's profesional qualifications and proj
 
 ### What does it do. 
 
-Will allow users to review projects and qualifications from Jack Mckenna, as well as review project portfolio and works available.
+Will allow users to review projects and qualifications from Jack Mckenna, as well as review project portfolio and work that can be done.
 
 ### How does it work?
 
-Users can submit information that is sent to jackmckenna requiring booking availablity. Site is styled with bootstrap and JQuery used for interactivity. 
+Users can submit information that is sent to jackmckenna requiring booking availablity. Site is styled with bootstrap and JQuery.
  
 ## Features
 
 ### Existing Features
- 
-- None Yet
-
-### Features left to implement
 
 - User based
-	- Registration
 	- Query to submit
 	- Contact information
 
 - Display features
-	- Home portal
-	- Home pages
-	- view portfolio
+	- Home page
+	- view portfolio with modals
 	- view about me
-	- spotify side bar/music player
-	- Video window
+	- map of area coverage
+	- View how to get in touch
+	
 
 - Mobile adaptability
 
@@ -50,6 +45,11 @@ Users can submit information that is sent to jackmckenna requiring booking avail
     - **Bower** is used to manage the installation of our libraries and frameworks
 - [jquery](https://jquery.com/)
 	- We use **JQuery** to add more interactive features to the web app. 
+	
+## Testing Done
+
+Tested on various mobile display settings and across different platforms. 
+
 
 ## Contributing
 

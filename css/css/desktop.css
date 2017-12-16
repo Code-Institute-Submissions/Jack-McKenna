@@ -29,6 +29,10 @@
   font-size: 25px;
 }
 
+.navbar li:hover a {
+  color: #333333;
+}
+
 .navbar .navbar-brand {
   font-size: 30px;
   font-family: Open Sans Condensed, Helvetica, sans-serif;
@@ -52,6 +56,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation-name: animateHome;
+  animation-duration: 0.4s;
+  /* Home Animation */
+}
+
+@-webkit-keyframes animateHome {
+  from {
+    top: -400px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateHome {
+  from {
+    top: -400px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 #elecTitle h2 {
@@ -132,6 +161,7 @@
 #aboutContent img {
   max-width: -webkit-fill-available;
   border-radius: 5px;
+  max-height: 60vh;
 }
 
 /* CSS styling for carousel in aboutme sections */

@@ -1,4 +1,7 @@
 angular.module('RouteControllers', [])
+    .controller('HomeController', function($scope) {
+        
+    })
     .controller('AboutController', function($scope) {
         // Image Carousel
         var carousel_images = [
@@ -56,7 +59,6 @@ angular.module('RouteControllers', [])
     })
     
     .controller('ContactController', function($scope) {
-        
 
         $('#contact-Form').submit(function(e) {
             var name = document.getElementById('usr')

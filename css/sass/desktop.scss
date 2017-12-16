@@ -31,6 +31,11 @@ $font-color: #f3f3f3;
 		font-family: $font-stack;
 		font-size: 25px;
 	}
+	li:hover {
+		a { 
+		color: $stock-back;
+		}
+	}
 	.navbar-brand{
 			font-size: 30px;
 			font-family: $font-stack;
@@ -54,6 +59,17 @@ $font-color: #f3f3f3;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	animation-name: animateHome;
+	animation-duration: 0.4s;
+	/* Home Animation */
+	@-webkit-keyframes animateHome {
+		from {top:-400px; opacity:0} 
+		to {top:0; opacity:1}
+	}
+	@keyframes animateHome {
+		from {top:-400px; opacity:0}
+		to {top:0; opacity:1}
+	}
 	h2 {
 		font-size: 80px;
 	}
@@ -69,8 +85,11 @@ $font-color: #f3f3f3;
 			text-decoration: underline;
 			color: $font-color;
 		}
+		
 	}
 }
+
+
 
 @media (max-width: 500px) {
 	#elecTitle {
@@ -126,6 +145,7 @@ $font-color: #f3f3f3;
 	img {
 		max-width: -webkit-fill-available;
 		border-radius: 5px;
+		max-height: 60vh;
 	}
 }
 
