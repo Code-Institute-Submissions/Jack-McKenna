@@ -12,7 +12,15 @@ Will allow users to review projects and qualifications from Jack Mckenna, as wel
 
 ### How does it work?
 
-Users can submit information that is sent to jackmckenna requiring booking availablity. Site is styled with bootstrap and JQuery.
+This web app is programmed using the Angular JS framework. THe app provides users the ablitiy to: 
+
+- View the story of Jack McKenna and services he can provide.
+- View Contact information on how to get in touch. 
+- View specific services he can provide. 
+- View current social netorks of Jack McKenna.
+- Submit information that is sent to jackmckenna requiring booking availablity. 
+
+Site is styled with bootstrap and JQuery.
  
 ## Features
 
@@ -48,13 +56,13 @@ Users can submit information that is sent to jackmckenna requiring booking avail
 	
 ## Testing Done
 
-- Unit Testing
-- Functional Testing 
-- System Testing
-- Performance Testing
-- Usability Testing
-- Regression Testing 
-
+- HTML testing using HTML validator ()
+- CSS testing using CSS validator ()
+- Javascript testing using JSHint ()
+- UX testing used by trialling with external parties
+- Mobile adaptibility teseted on various devices
+- Performance testing by measuring load times and reducing.
+- Stress testing done by using limited browser functionality. 
 
 ## Contributing
 
