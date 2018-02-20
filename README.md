@@ -56,9 +56,9 @@ Site is styled with bootstrap and JQuery.
 	
 ## Testing Done
 
-- HTML testing using HTML validator ()
-- CSS testing using CSS validator ()
-- Javascript testing using JSHint ()
+- HTML testing using HTML validator (https://validator.w3.org/)
+- CSS testing using CSS validator (http://www.css-validator.org/)
+- Javascript testing using JSHint (http://jshint.com/)
 - UX testing used by trialling with external parties
 - Mobile adaptibility teseted on various devices
 - Performance testing by measuring load times and reducing.
