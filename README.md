@@ -48,7 +48,12 @@ Users can submit information that is sent to jackmckenna requiring booking avail
 	
 ## Testing Done
 
-Tested on various mobile display settings and across different platforms. 
+- Unit Testing
+- Functional Testing 
+- System Testing
+- Performance Testing
+- Usability Testing
+- Regression Testing 
 
 
 ## Contributing
@@ -69,3 +74,9 @@ Tested on various mobile display settings and across different platforms.
 5. Once **http-server** is installed run ```http-server -c-1```
 6. The project will now run on [localhost](http://127.0.0.1:8080)
 7. Make changes to the code and if you think it belongs in here then just submit a pull request
+
+## Credits
+
+Thanks given to the Code Institute for guidance and teaching to assist in making this app. 
+Thanks given also to Jack McKenna for his assistance on content for his site as well as helping in the testing. 
+Also thanks given to W3Schools' tutorials for assistance with Front End development
