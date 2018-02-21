@@ -1,7 +1,4 @@
 angular.module('RouteControllers', [])
-    .controller('HomeController', function($scope) {
-        
-    })
     .controller('AboutController', function($scope) {
         // Image Carousel
         var carousel_images = [
@@ -56,9 +53,4 @@ angular.module('RouteControllers', [])
             installationModal.style.display = "none",
             repairModal.style.display = "none"
         };
-    })
-    
-    .controller('ContactController', function($scope) {
-
-        
     });

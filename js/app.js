@@ -5,7 +5,6 @@ angular.module('JackApp').config(function($locationProvider, $routeProvider) {
  
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
-        controller: 'HomeController',
     })
     .when('/about', {
         templateUrl: 'templates/about.html',
@@ -17,6 +16,5 @@ angular.module('JackApp').config(function($locationProvider, $routeProvider) {
     })
     .when('/contact', {
         templateUrl: 'templates/contact.html',
-        controller: 'ContactController',
     });
 });
