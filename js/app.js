@@ -16,6 +16,5 @@ angular.module('JackApp').config(function($locationProvider, $routeProvider) {
     })
     .when('/contact', {
         templateUrl: 'templates/contact.html',
-        controller: 'ContactController',
     });
 });

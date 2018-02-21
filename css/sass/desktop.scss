@@ -31,6 +31,11 @@ $font-color: #f3f3f3;
 		font-family: $font-stack;
 		font-size: 25px;
 	}
+	li:hover {
+		a { 
+		color: $stock-back;
+		}
+	}
 	.navbar-brand{
 			font-size: 30px;
 			font-family: $font-stack;
@@ -51,6 +56,7 @@ $font-color: #f3f3f3;
 }
 
 #elecTitle {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -69,8 +75,11 @@ $font-color: #f3f3f3;
 			text-decoration: underline;
 			color: $font-color;
 		}
+		
 	}
 }
+
+
 
 @media (max-width: 500px) {
 	#elecTitle {
@@ -126,6 +135,7 @@ $font-color: #f3f3f3;
 	img {
 		max-width: -webkit-fill-available;
 		border-radius: 5px;
+		max-height: 60vh;
 	}
 }
 
@@ -148,6 +158,9 @@ $font-color: #f3f3f3;
 	}
 	#sliders {
 		align-content: center;
+		button {
+			background-color:$stock-back;
+		}
 	}
 	div {
 		@media (max-width: 768px) {

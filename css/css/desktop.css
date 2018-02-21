@@ -29,6 +29,10 @@
   font-size: 25px;
 }
 
+.navbar li:hover a {
+  color: #333333;
+}
+
 .navbar .navbar-brand {
   font-size: 30px;
   font-family: Open Sans Condensed, Helvetica, sans-serif;
@@ -49,6 +53,7 @@
 }
 
 #elecTitle {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,6 +137,7 @@
 #aboutContent img {
   max-width: -webkit-fill-available;
   border-radius: 5px;
+  max-height: 60vh;
 }
 
 /* CSS styling for carousel in aboutme sections */
@@ -157,6 +163,10 @@
 
 #carousel #sliders {
   align-content: center;
+}
+
+#carousel #sliders button {
+  background-color: #333333;
 }
 
 @media (max-width: 768px) {

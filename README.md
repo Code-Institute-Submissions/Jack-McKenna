@@ -8,32 +8,35 @@ This is a web app to showcase Jack Mckenna's profesional qualifications and proj
 
 ### What does it do. 
 
-Will allow users to review projects and qualifications from Jack Mckenna, as well as review project portfolio and works available.
+Will allow users to review projects and qualifications from Jack Mckenna, as well as review project portfolio and work that can be done.
 
 ### How does it work?
 
-Users can submit information that is sent to jackmckenna requiring booking availablity. Site is styled with bootstrap and JQuery used for interactivity. 
+This web app is programmed using the Angular JS framework. THe app provides users the ablitiy to: 
+
+- View the story of Jack McKenna and services he can provide.
+- View Contact information on how to get in touch. 
+- View specific services he can provide. 
+- View current social netorks of Jack McKenna.
+- Submit information that is sent to jackmckenna requiring booking availablity. 
+
+Site is styled with bootstrap and JQuery.
  
 ## Features
 
 ### Existing Features
- 
-- None Yet
-
-### Features left to implement
 
 - User based
-	- Registration
 	- Query to submit
 	- Contact information
 
 - Display features
-	- Home portal
-	- Home pages
-	- view portfolio
+	- Home page
+	- view portfolio with modals
 	- view about me
-	- spotify side bar/music player
-	- Video window
+	- map of area coverage
+	- View how to get in touch
+	
 
 - Mobile adaptability
 
@@ -50,6 +53,16 @@ Users can submit information that is sent to jackmckenna requiring booking avail
     - **Bower** is used to manage the installation of our libraries and frameworks
 - [jquery](https://jquery.com/)
 	- We use **JQuery** to add more interactive features to the web app. 
+	
+## Testing Done
+
+- HTML testing using HTML validator (https://validator.w3.org/)
+- CSS testing using CSS validator (http://www.css-validator.org/)
+- Javascript testing using JSHint (http://jshint.com/)
+- UX testing used by trialling with external parties
+- Mobile adaptibility teseted on various devices
+- Performance testing by measuring load times and reducing.
+- Stress testing done by using limited browser functionality. 
 
 ## Contributing
 
@@ -69,3 +82,9 @@ Users can submit information that is sent to jackmckenna requiring booking avail
 5. Once **http-server** is installed run ```http-server -c-1```
 6. The project will now run on [localhost](http://127.0.0.1:8080)
 7. Make changes to the code and if you think it belongs in here then just submit a pull request
+
+## Credits
+
+Thanks given to the Code Institute for guidance and teaching to assist in making this app. 
+Thanks given also to Jack McKenna for his assistance on content for his site as well as helping in the testing. 
+Also thanks given to W3Schools' tutorials for assistance with Front End development

@@ -22,6 +22,18 @@
     <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
     <!-- JQuery -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.navbar').fadeIn(2000)
+        })
+    </script>
+    <!-- EmailJS to enable email forms -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_9HNBOlAd7KO3VpmklserK");
+        })();
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -101,6 +113,8 @@
     </footer>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='js/app.js'></script>
-	<script src='js/controller.js'></script>
+    <script src='js/controller.js'></script>
+    <script src='js/elec.js'></script>
+    <script src='js/email.js'></script>
 </body>
 </html>
