@@ -56,20 +56,10 @@ $font-color: #f3f3f3;
 }
 
 #elecTitle {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	animation-name: animateHome;
-	animation-duration: 0.4s;
-	/* Home Animation */
-	@-webkit-keyframes animateHome {
-		from {top:-400px; opacity:0} 
-		to {top:0; opacity:1}
-	}
-	@keyframes animateHome {
-		from {top:-400px; opacity:0}
-		to {top:0; opacity:1}
-	}
 	h2 {
 		font-size: 80px;
 	}
@@ -168,6 +158,9 @@ $font-color: #f3f3f3;
 	}
 	#sliders {
 		align-content: center;
+		button {
+			background-color:$stock-back;
+		}
 	}
 	div {
 		@media (max-width: 768px) {

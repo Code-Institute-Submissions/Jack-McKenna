@@ -53,34 +53,10 @@
 }
 
 #elecTitle {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  animation-name: animateHome;
-  animation-duration: 0.4s;
-  /* Home Animation */
-}
-
-@-webkit-keyframes animateHome {
-  from {
-    top: -400px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes animateHome {
-  from {
-    top: -400px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
 }
 
 #elecTitle h2 {
@@ -187,6 +163,10 @@
 
 #carousel #sliders {
   align-content: center;
+}
+
+#carousel #sliders button {
+  background-color: #333333;
 }
 
 @media (max-width: 768px) {
