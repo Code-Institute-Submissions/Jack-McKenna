@@ -6,11 +6,17 @@ function sendMail(contactForm) {
         "work_requested": contactForm.message.value
     })
     .then(
-        function(response) {
-            window.alert("Your email has been sent!!",response);
-            location.reload();
+        function (response) {
+            swal({
+                title: "Your email has been submitted!",
+                icon: "success"
+            });
         },
-        function(error) {
-            window.alert("FAILED TO SEND", error)
+        function (error) {
+            swal({
+                title: "There has been an error!",
+                text: "Please try again later or email example@example.com",
+                icon: "error"
+            });
         });
 }
